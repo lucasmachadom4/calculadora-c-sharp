@@ -10,4 +10,4 @@ Projeto de uma calculadora simples feito em Windows Forms
 
 ## PrintScreen
 
-<img width=50px height=50px src="Link" alt="PrintScreen calculadora">
+<img width=300px height=372px src="https://raw.githubusercontent.com/lucasmachadom4/calculadora-c-sharp/development/screen_calc.png" alt="PrintScreen calculadora">
