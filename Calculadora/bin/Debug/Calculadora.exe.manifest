@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calculadora.exe" size="277920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calculadora.exe" size="278944">
       <assemblyIdentity name="Calculadora" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z/6ssa/SzKv44z2V0etWIKECShyYo+hPocuKEbZsZ/s=</dsig:DigestValue>
+        <dsig:DigestValue>5Sfe3Stnw2xxETuv8P1kQg1LQ6y43nXmITLxaYjRT5A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>9Du7/YMZzHXE/yB+WGt43rxaXgBL6Jv1U0jrWo2kvWU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Calculadora.exe.config" size="189">
+  <file name="Calculadora.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+      <dsig:DigestValue>X+GtgC9o18R9u9jmAWK6iKuu0WLaXTgchdPkk1MRli4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

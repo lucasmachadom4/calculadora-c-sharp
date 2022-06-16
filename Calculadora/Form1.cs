@@ -11,30 +11,29 @@ namespace Calculadora
 {
     public partial class formCalculadora : Form
     {
-        private UserPreferenceChangedEventHandler UserPreferenceChanged;
-
+        private readonly UserPreferenceChangedEventHandler UserPreferenceChanged; 
         private void CarregarTema()
         {
-            var themaColor = WindowsTema.GetAccentColor();
-            var lightColor = ControlPaint.Light(themaColor);
-            var lightLightColor = ControlPaint.LightLight(themaColor);
-            var darkColor = ControlPaint.Dark(themaColor);
-            var darkDarkColor = ControlPaint.DarkDark(themaColor);
+            Color themaColor = WindowsTema.GetAccentColor();
+            Color lightLightColor = ControlPaint.LightLight(themaColor);
+            Color darkDarkGray = Color.FromArgb(32,32,32);
+            Color darkGray = Color.FromArgb(42,42,42);
 
-            BackColor = darkColor;
-            btnIgualdade.BackColor = lightLightColor;
+            BackColor = darkDarkGray; 
+            txtBoxSaida.BorderStyle = BorderStyle.None;
+            txtBoxSaida.BackColor = BackColor;
+            txtBoxEntrada.BorderStyle = BorderStyle.None;
+            txtBoxEntrada.BackColor = BackColor;
 
-            txtBoxSaida.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            txtBoxSaida.BackColor = this.BackColor;
-            txtBoxEntrada.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            txtBoxEntrada.BackColor = this.BackColor;
-
-            foreach (Button button in this.Controls.OfType<Button>())
+            foreach (Button button in Controls.OfType<Button>())
             {
+                button.BackColor = darkGray;
                 button.FlatStyle = FlatStyle.Flat;
-                button.FlatAppearance.BorderColor = Color.White;
+                button.FlatAppearance.BorderColor = darkGray;
                 button.FlatAppearance.BorderSize = 2;
             }
+            btnIgualdade.BackColor = lightLightColor;
+            btnIgualdade.FlatAppearance.BorderColor = lightLightColor;            
         }
         private void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
         {
@@ -55,7 +54,7 @@ namespace Calculadora
 
             UserPreferenceChanged = new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
             SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
-            this.Disposed += new EventHandler(Form_Dispose);
+            Disposed += new EventHandler(Form_Dispose);
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -257,14 +256,14 @@ namespace Calculadora
                 e.Handled = true; 
             } 
         }
-
-        //Console para teste
-        /*private void Form1_Load(object sender, EventArgs e)
-        {
-            AllocConsole();
+        private void lblAssinatura_Paint(object sender, PaintEventArgs e)
+        {           
+            Font myFont = new Font("Arial", 14);
+            Brush myBrush = new SolidBrush(Color.White);
+            //e.Graphics.TranslateTransform(30, 170);
+            e.Graphics.TranslateTransform(40, 90);
+            e.Graphics.RotateTransform(90);
+            e.Graphics.DrawString("Desenvolvido por Lucas Machado", myFont, myBrush, 0, 0);
         }
-        [DllImport("kernel32.dll", SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        static extern bool AllocConsole(); */
     }
 }
