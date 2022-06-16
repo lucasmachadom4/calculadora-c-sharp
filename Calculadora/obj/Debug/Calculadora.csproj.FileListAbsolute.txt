@@ -1,0 +1,15 @@
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\bin\Debug\Calculadora.exe.manifest
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\bin\Debug\Calculadora.application
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.SuggestedBindingRedirects.cache
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.formCalculadora.resources
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.exe.manifest
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.application
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+D:\Lucas\Documents\GitHub\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
